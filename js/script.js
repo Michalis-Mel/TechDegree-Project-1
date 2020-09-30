@@ -57,18 +57,18 @@ function getRandomQuote(array) {
 function printQuote() {
   let object = getRandomQuote(quotes);
   let html = `
-    <p class="quote"> ${object.quote} </p>
-    <p class="source"> ${object.source} 
+    <p class="quote">${object.quote} </p>
+    <p class="source">${object.source} 
    `;
 
   if (object.citation) {
-    html += `<span class="citation"> ${object.citation}</span>`;
+    html += `<span class="citation">${object.citation}</span>`;
   }
   if (object.year) {
-    html += `<span class="year"> ${object.year}</span>`;
+    html += `<span class="year">${object.year}</span>`;
   }
   if (object.usage) {
-    html += `<span class="usage"> ${object.usage}</span>`;
+    html += `<span class="usage">${object.usage}</span>`;
   }
   html += `</p>`;
   document.getElementById("quote-box").innerHTML = html;
@@ -78,9 +78,9 @@ function printQuote() {
 
 //Creating a function to give me a random color
 function randomHex() {
-  randomColor1 = Math.floor(Math.random() * 255 + 1);
-  randomColor2 = Math.floor(Math.random() * 255 + 1);
-  randomColor3 = Math.floor(Math.random() * 255 + 1);
+  randomColor1 = Math.floor(Math.random() * 255);
+  randomColor2 = Math.floor(Math.random() * 255);
+  randomColor3 = Math.floor(Math.random() * 255);
   color = `rgb(${randomColor1}, ${randomColor2}, ${randomColor3})`;
   return color;
 }
