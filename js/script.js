@@ -87,8 +87,7 @@ function randomHex() {
 
 //Adding event listeners so when i click the show another quote button it calls the printQuote function
 
-document.getElementById("load-quote");
-document.addEventListener("click", printQuote, false);
+document.getElementById("load-quote").addEventListener("click", printQuote, false);
 
 //Setting an interval to change my quote every 10 seconds
 
